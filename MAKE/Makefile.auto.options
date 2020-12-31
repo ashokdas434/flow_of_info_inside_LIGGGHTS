@@ -1,0 +1,25 @@
+# Automatically generated file from Makefile.auto.
+
+# DO NO EDIT THIS FILE
+
+OPTIONS_USE_MPI = "ON"
+OPTIONS_USE_VTK = "ON"
+OPTIONS_USE_SUPERQUADRICS = "ON"
+OPTIONS_USE_CATALYST = "OFF"
+OPTIONS_USE_JPG = "OFF"
+OPTIONS_USE_FPIC = "ON"
+OPTIONS_USE_PROFILE = "OFF"
+OPTIONS_USE_CONVEX = "OFF"
+OPTIONS_USE_GZIP = "OFF"
+OPTIONS_USE_XDR = "OFF"
+OPTIONS_USE_MFEM = "OFF"
+OPTIONS_VTK_ADDLIBS =  -lvtkCommonCore-6.2 -lvtkIOCore-6.2 -lvtkIOXML-6.2 -lvtkIOLegacy-6.2 -lvtkIOImage-6.2 -lvtkCommonDataModel-6.2 -lvtkParallelCore-6.2 -lvtkParallelMPI-6.2 -lvtkCommonExecutionModel-6.2 -lvtkFiltersCore-6.2 -lvtksys-6.2 -lvtkCommonMisc-6.2 -lvtkCommonTransforms-6.2 -lvtkCommonMath-6.2 -lvtkIOXMLParser-6.2 -lvtkCommonSystem-6.2 -lvtkDICOMParser-6.2 -lvtkmetaio-6.2 -lvtkIOParallelXML-6.2
+OPTIONS_VTK_LIB = -L/usr/lib/x86_64-linux-gnu/
+OPTIONS_VTK_INC = -I/usr/include/vtk-6.2
+ifeq ($(READ_M2M_VARS),1)
+    ARCHIVE = ar
+    ARFLAGS = rv
+    CXX = mpicxx
+    CCFLAGS = -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -DHAVE_TR1_CMATH -fPIC
+    DEPFLAGS = -M
+endif
