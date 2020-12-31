@@ -1,0 +1,12 @@
+dump_atom_vtk.cpp:47:#include <vtkVersion.h>
+dump_custom_vtk.cpp:76:#include <vtkVersion.h>
+dump_custom_vtm.cpp:73:#include <vtkVersion.h>
+dump_decomposition_vtk.cpp:187:  fprintf(fp,"# vtk DataFile Version 2.0\nLIGGGHTS mesh/gran/VTK export\nASCII\n");
+dump_euler_vtk.cpp:127:  fprintf(fp,"# vtk DataFile Version 2.0\nLIGGGHTS mesh/VTK export\nASCII\n");
+dump_local_gran.cpp:65:#include <vtkVersion.h>
+dump_local_gran_vtk.cpp:64:#include <vtkVersion.h>
+dump_particle.cpp:70:#include <vtkVersion.h>
+info.cpp:212:    fullversion = GetVersion();
+read_restart.cpp:516:        // Version LIGGGHTS-REPOSITORY-NAME MAJOR.MINOR.[....]
+universe.cpp:75:  //sprintf(version,"Version %s based on LAMMPS %s",LIGGGHTS_VERSION,LAMMPS_VERSION); 
+universe.cpp:76:  sprintf(version,"Version %s",LIGGGHTS_VERSION); 

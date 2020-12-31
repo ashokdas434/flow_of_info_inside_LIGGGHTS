@@ -1,0 +1,69 @@
+fix_heat_gran.cpp:void FixHeatGran::initial_integrate(int vflag)
+fix_mesh_surface.cpp:void FixMeshSurface::initial_integrate(int vflag)
+fix_mesh_surface.cpp:        active_mesh_modules[*it]->initial_integrate(vflag);
+fix_move.cpp:void FixMove::initial_integrate(int vflag)
+fix_move.cpp:void FixMove::initial_integrate_respa(int vflag, int ilevel, int iloop)
+fix_move.cpp:  if (ilevel == nlevels_respa-1) initial_integrate(vflag);
+fix_move_mesh.cpp:void FixMoveMesh::initial_integrate(int dummy)
+fix_move_mesh.cpp:    move_->initial_integrate(time_,time_since_setup_,dt);
+fix_multisphere.cpp:void FixMultisphere::initial_integrate(int vflag)
+fix_multisphere.cpp:    // 1/2 factor b/c initial_integrate contributes other half
+fix_nve_asphere_base.cpp:void FixNVEAsphereBase::initial_integrate(int vflag)
+fix_nve_asphere.cpp:void FixNVEAsphere::initial_integrate(int vflag)
+fix_nve_asphere_noforce.cpp:void FixNVEAsphereNoforce::initial_integrate(int vflag)
+fix_nve.cpp:void FixNVE::initial_integrate(int vflag)
+fix_nve.cpp:printf("================= JCPRINT:FixNVE::initial_integrate is being called ======\n");    
+fix_nve.cpp:void FixNVE::initial_integrate_respa(int vflag, int ilevel, int iloop)
+fix_nve.cpp:printf("================= JCPRINT:FixNVE::initial_integrate_respa is being called ======\n");    
+fix_nve.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_nve_limit.cpp:void FixNVELimit::initial_integrate(int vflag)
+fix_nve_limit.cpp:void FixNVELimit::initial_integrate_respa(int vflag, int ilevel, int iloop)
+fix_nve_limit.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_nve_line.cpp:void FixNVELine::initial_integrate(int vflag)
+fix_nve_noforce.cpp:void FixNVENoforce::initial_integrate(int vflag)
+fix_nve_noforce.cpp:void FixNVENoforce::initial_integrate_respa(int vflag, int ilevel, int flag)
+fix_nve_noforce.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_nve_sph.cpp:void FixNVESph::initial_integrate(int vflag)
+fix_nve_sph.cpp:void FixNVESph::initial_integrate_respa(int vflag, int ilevel, int iloop)
+fix_nve_sph.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_nve_sphere.cpp:void FixNVESphere::initial_integrate(int vflag)
+fix_nve_sphere.cpp:printf("================= JCPRINT:FixNVESphere::initial_integrate is being called ======\n");    
+fix_nve_sph_stationary.cpp:void FixNVESphStationary::initial_integrate(int vflag)
+fix_rigid.cpp:void FixRigid::initial_integrate(int vflag)
+fix_rigid.cpp:  // virial is already setup from initial_integrate
+fix_rigid.cpp:void FixRigid::initial_integrate_respa(int vflag, int ilevel, int iloop)
+fix_rigid.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_rigid.cpp:    // 1/2 factor b/c initial_integrate contributes other half
+fix_scalar_transport_equation.cpp:void FixScalarTransportEquation::initial_integrate(int vflag)
+fix_scalar_transport_equation.cpp:void FixScalarTransportEquation::initial_integrate_respa(int vflag, int ilevel, int flag)
+fix_scalar_transport_equation.cpp:  if (ilevel == nlevels_respa-1) initial_integrate(vflag);
+mesh_module_stress_servo.cpp:void MeshModuleStressServo::initial_integrate(int vflag)
+mesh_mover_linear.cpp:void MeshMoverLinear::initial_integrate(double dTAbs,double dTSetup,double dt)
+mesh_mover_linear.cpp:void MeshMoverLinearVariable::initial_integrate(double dTAbs,double dTSetup,double dt)
+mesh_mover_linear.cpp:void MeshMoverWiggle::initial_integrate(double dTAbs,double dTSetup,double dt)
+mesh_mover_linear.cpp:void MeshMoverVibLin::initial_integrate(double dTAbs,double dTSetup,double dt)
+mesh_mover_rotation.cpp:void MeshMoverRotate::initial_integrate(double dTAbs,double dTSetup,double dt)
+mesh_mover_rotation.cpp:void MeshMoverRotateVariable::initial_integrate(double,double,double dt)
+mesh_mover_rotation.cpp:void MeshMoverRiggle::initial_integrate(double dTAbs,double dTSetup,double dt)
+mesh_mover_rotation.cpp:void MeshMoverVibRot::initial_integrate(double dTAbs,double dTSetup,double dt)
+modify.cpp:  n_pre_initial_integrate = n_initial_integrate = n_post_integrate = 0;
+modify.cpp:  n_initial_integrate_respa = n_post_integrate_respa = 0;
+modify.cpp:  list_pre_initial_integrate = list_initial_integrate = list_post_integrate = NULL;
+modify.cpp:  list_initial_integrate_respa = list_post_integrate_respa = NULL;
+modify.cpp:  delete [] list_pre_initial_integrate;
+modify.cpp:  delete [] list_initial_integrate;
+modify.cpp:  delete [] list_initial_integrate_respa;
+modify.cpp:  list_init(PRE_INITIAL_INTEGRATE,n_pre_initial_integrate,list_pre_initial_integrate);
+modify.cpp:  list_init(INITIAL_INTEGRATE,n_initial_integrate,list_initial_integrate);
+modify.cpp:            n_initial_integrate_respa,list_initial_integrate_respa);
+modify.cpp:void Modify::pre_initial_integrate()
+modify.cpp:  call_method_on_fixes(&Fix::pre_initial_integrate, list_pre_initial_integrate, n_pre_initial_integrate);
+modify.cpp:void Modify::initial_integrate(int vflag)
+modify.cpp:  call_method_on_fixes(&Fix::initial_integrate, vflag, list_initial_integrate, n_initial_integrate);
+modify.cpp:void Modify::initial_integrate_respa(int vflag, int ilevel, int iloop)
+modify.cpp:  call_respa_method_on_fixes(&Fix::initial_integrate_respa, vflag, ilevel, iloop,
+modify.cpp:      list_initial_integrate_respa, n_initial_integrate_respa);
+respa.cpp:    modify->initial_integrate_respa(vflag,ilevel,iloop);
+verlet.cpp:  const int n_pre_initial_integrate = modify->n_pre_initial_integrate;
+verlet.cpp:    if (n_pre_initial_integrate) modify->pre_initial_integrate();
+verlet.cpp:    modify->initial_integrate(vflag);
