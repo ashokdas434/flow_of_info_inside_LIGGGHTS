@@ -1,0 +1,43 @@
+delete_atoms.cpp:101:    modify->find_fix_style_strict("contacthistory",0)->pre_exchange();
+delete_atoms.cpp:103:    modify->find_fix_style_strict("bond/propagate/gran",0)->pre_exchange();
+fix_contact_history.cpp:279:   only invoke pre_exchange() if neigh list stores more current history info
+fix_contact_history.cpp:296:      pre_exchange();
+fix_contact_history.cpp:298:  // computeflag is re-set in pre_exchange()
+fix_contact_history.cpp:306:void FixContactHistory::pre_exchange()
+fix_contact_history.cpp:433:    pre_exchange();
+fix_contact_history.cpp:434:  // computeflag is re-set in pre_exchange()
+fix_contact_history.cpp:441:  pre_exchange();
+fix_contact_history.h:79:  virtual void pre_exchange();
+fix_contact_history_mesh.cpp:261:    pre_exchange();
+fix_contact_history_mesh.cpp:267:  pre_exchange();
+fix_contact_history_mesh.cpp:274:void FixContactHistoryMesh::pre_exchange()
+fix_contact_history_mesh.h:77:  void pre_exchange();
+fix_contact_property_atom.cpp:167:    //    pre_exchange();
+fix_contact_property_atom.cpp:175:        pre_exchange();
+fix_contact_property_atom.cpp:180:void FixContactPropertyAtom::pre_exchange()
+fix_contact_property_atom.h:76:  void pre_exchange();
+fix_deform.cpp:683:void FixDeform::pre_exchange()
+fix_deform.h:68:  void pre_exchange();
+fix.h:158:  virtual void pre_exchange() {}
+fix_insert.cpp:653:void FixInsert::pre_exchange()
+fix_insert.h:68:  void pre_exchange();
+fix_massflow_mesh.cpp:546:void FixMassflowMesh::pre_exchange()
+fix_massflow_mesh_sieve.cpp:185:    mask |= PRE_EXCHANGE; //ensure pre_exchange always happens
+fix_massflow_mesh_sieve.cpp:295:void FixMassflowMeshSieve::pre_exchange()
+fix_massflow_mesh_sieve.cpp:297:    FixMassflowMesh::pre_exchange();
+fix_massflow_mesh_sieve.h:69:  void pre_exchange();
+fix_mesh.cpp:543:void FixMesh::pre_exchange()
+fix_mesh.h:77:        virtual void pre_exchange();
+fix_multisphere.cpp:532:    pre_exchange();
+fix_multisphere.cpp:1202:void FixMultisphere::pre_exchange()
+fix_multisphere.cpp:1231:     and after fix_deform::pre_exchange() may have flipped box
+fix_multisphere.h:114:      void pre_exchange();
+fix_rigid.cpp:1073:     and after fix_deform::pre_exchange() may have flipped box
+modify.cpp:344:   setup pre_exchange call, only for fixes that define pre_exchange
+modify.cpp:412:   pre_exchange call, only for relevant fixes
+modify.cpp:415:void Modify::pre_exchange()
+modify.cpp:418:  call_method_on_fixes(&Fix::pre_exchange, list_pre_exchange, n_pre_exchange);
+modify.cpp:1336:   create list of fix indices for for pre_exchange fixes
+modify.h:99:  virtual void pre_exchange();
+respa.cpp:566:        if (modify->n_pre_exchange) modify->pre_exchange();
+verlet.cpp:309:      if (n_pre_exchange) modify->pre_exchange();
