@@ -1,0 +1,16 @@
+fix_mesh_surface.cpp:        active_mesh_modules[*it]->initial_integrate(vflag);
+fix_move.cpp:  if (ilevel == nlevels_respa-1) initial_integrate(vflag);
+fix_move_mesh.cpp:    move_->initial_integrate(time_,time_since_setup_,dt);
+fix_nve.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_nve_limit.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_nve_noforce.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_nve_sph.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_rigid.cpp:  if (ilevel == 0) initial_integrate(vflag);
+fix_scalar_transport_equation.cpp:  if (ilevel == nlevels_respa-1) initial_integrate(vflag);
+modify.cpp:  list_init(PRE_INITIAL_INTEGRATE,n_pre_initial_integrate,list_pre_initial_integrate);
+modify.cpp:  list_init(INITIAL_INTEGRATE,n_initial_integrate,list_initial_integrate);
+modify.cpp:            n_initial_integrate_respa,list_initial_integrate_respa);
+modify.cpp:  call_method_on_fixes(&Fix::pre_initial_integrate, list_pre_initial_integrate, n_pre_initial_integrate);
+modify.cpp:  call_method_on_fixes(&Fix::initial_integrate, vflag, list_initial_integrate, n_initial_integrate);
+verlet.cpp:    if (n_pre_initial_integrate) modify->pre_initial_integrate();
+verlet.cpp:    modify->initial_integrate(vflag);
